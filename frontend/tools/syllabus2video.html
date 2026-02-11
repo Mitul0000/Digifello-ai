@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus2Video-AI</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="tool-syllabus">
+
+    <header class="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">Digifello <span>AI</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <button class="menu-close" id="menuClose">&times;</button>
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../request-tool.html">Request Tool</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="title"><h1>Build Your Study Plan</h1></div>
+        <div id="subheading"><p id="subhead">Enter your syllabus details and preferences to get personalized video recommendations.</p></div>
+        <div id="placeholder">
+            <p class="text-top">Enter your syllabus topics</p>
+            <textarea id="syllebus" placeholder="e.g., Chapter 1: Introduction to Calculus, Chapter 2: Limits and Continuity, ... Or paste your entire syllabus here."></textarea>
+            <div id="select_box">
+                <div id="box-1">
+                    <p class="text-second">Student Level</p>
+                    <input type="text" name="" id="student_level" placeholder="Enter your academic level">
+                    <p class="text-second">Preferred Language</p>
+                    <select  id="language">
+                        <option value="Hinglish">Hinglish</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                <div id="box-2">
+                    <p class="text">Time available (At total for the syllebus)</p>
+                    <input type="text" name="" id="time" placeholder="2 hours, 30 minutes, 1 day">
+                </div>
+                <!-- <div id="box-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="text">Include subtitles</span>
+                    <input type="checkbox"  class="checkbox">
+                    <span class="text">Allow longer videos</span>
+                </div> -->
+                <div id="button">
+                    <button class="btn" id="clearBtn">Clear form</button>
+                    <button class="btn" id="submitBtn">Find Best Videos</button>
+                </div>
+                <div id="result" style="margin-top:30px; white-space:pre-wrap;"></div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Digifello AI Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/tools/syllabus2video.js"></script>
+</body>
+</html>

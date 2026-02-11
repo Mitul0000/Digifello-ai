@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | Digifello AI</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="Terms-and-Conditions">
+    <header class="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo">Digifello <span>AI</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <button class="menu-close" id="menuClose">&times;</button>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="request-tool.html">Request Tool</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="info-page">
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container narrow">
+                <h1>Request a New AI Tool</h1>
+                <p>
+                    Suggest a tool you would like to see on Digifello AI.
+                    We carefully review all submissions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Request Section -->
+        <section class="page-section">
+            <div class="container narrow">
+
+                <article class="content-block">
+                    <h2>Why Submit a Tool Request?</h2>
+                    <p>
+                        Digifello AI is built around practical utility. Your suggestions
+                        help us understand real user needs and prioritize future tool development.
+                    </p>
+                    <p>
+                        We focus on building structured, scalable tools that provide
+                        meaningful value rather than temporary features.
+                    </p>
+                </article>
+
+                <!-- Request Form -->
+                <form class="contact-form" id="requestToolForm">
+
+                    <div class="form-group">
+                        <label for="toolName">Proposed Tool Name</label>
+                        <input type="text" id="toolName" name="toolName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="toolCategory">Tool Category</label>
+                        <input type="text" id="toolCategory" name="toolCategory"
+                            placeholder="Example: Education, SEO, Content, Automation" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="toolDescription">Describe What This Tool Should Do</label>
+                        <textarea id="toolDescription" name="toolDescription" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="useCase">How Would You Use This Tool?</label>
+                        <textarea id="useCase" name="useCase" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailOptional">Your Email (Optional)</label>
+                        <input type="email" id="emailOptional" name="emailOptional">
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Submit Request
+                    </button>
+
+                </form>
+
+                <article class="content-block">
+                    <h2>Review Process</h2>
+                    <p>
+                        All tool requests are reviewed internally. Submission does not
+                        guarantee implementation, but high-demand ideas are prioritized
+                        based on feasibility and long-term value.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Digifello AI Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
