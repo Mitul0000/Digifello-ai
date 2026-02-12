@@ -1,4 +1,5 @@
 import os
+import time
 from dotenv import load_dotenv
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, NoTranscriptFound
 from google import genai
@@ -111,7 +112,7 @@ Here are the videos:
 def pipeline(syllabus,student_bio,language,time_limit):
     video=get_unique_youtube_links(syllabus,student_bio,language,time_limit)
     final_video=prepare_video_data(video)
-
+    time.sleep(2)
     result=ask_gemini_to_select_videos(
     syllabus,
     student_bio,
